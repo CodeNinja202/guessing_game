@@ -1,0 +1,80 @@
+*,
+*:before,
+*:after {
+    text-align: center;
+    padding: 0;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(109.6deg,
+          rgba(61, 245, 167, 1) 11.2%,
+          rgba(9, 111, 224, 1) 91.1%);
+    text-align: center;
+  }
+
+ 
+  
+  #result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #result.correct {
+    color: green;
+  }
+  
+  #result.incorrect {
+    color: red;
+  }
+
+
+  .container {
+  
+    position: absolute;
+    width: 50%;
+    min-width: 580px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: whitesmoke;
+    border-radius: 55px;
+    padding: 50px 10px;
+    display: grid;
+    justify-items: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none
+}
+
+
+button{
+  height: 3rem;
+  width: 160px;
+  padding: 15px 0;
+  border-radius: 5px;
+  background-image: linear-gradient(109.6deg,
+  rgba(61, 245, 167, 1) 11.2%,
+  rgba(9, 111, 224, 1) 91.1%);
+  color:aliceblue;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+p{
+  font-weight: 400;
+}

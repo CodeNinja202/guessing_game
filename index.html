@@ -1,57 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Guessing Game</title>
-    <!--Font-->
-    <link rel="preconnect" href='https://fonts.gstatic.com'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Styles-->
-    <link rel="stylesheet" href="main.css">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="index.css">
 </head>
-<header>
-    <div class="top_of_page">
-    <h1>Guessing Game!</h1>
-</div>
-</header>
 <body>
-
-<main>
-<div class="container">
-    
-    <h3>Guess a number between 1-100!</h3>
-   
-
-    <form id="result">
-    <button onclick="play()" id="my_btn">GUESS</button>
-   
-   
-    
-    <input type="text" placeholder="Enter Number" id="guess">
-    
-    
-    <p id="message1">Guessed Numbers: 0</p>
-    <p id="message2"></p>
-    <p id="message3"></p>
-    <p id="message4"></p>
-
-    <input type="button" value="Reset" onclick="clearResult()">
-      </form>
-    </div>
- </main>
-
-    
-
-    <!--Scripts-->
-
-
-
-
-    <script src='js/guessing-game.js'></script>
-    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
-  </body>
-
+  <div class="container">
+ <h1>Guessing Game</h1>
+  <p>Enter a number between 1 and 100:</p>
+  <div class="input-div">
+  <input style="height: 50px" type="number" id="guess-input" min="1" />
+</div>
+  <button id="guess-button">Guess</button>
+  <button id="hint-button">Hint</button>
+  <button id="reset-button">Reset</button>
+  <div id="result"></div>
+  <div id="hint"></div>
+  <div id="previous-guesses">
+    <div id="guess-1"></div>
+    <div id="guess-2"></div>
+    <div id="guess-3"></div>
+    <div id="guess-4"></div>
+    <div id="guess-5"></div>
+    <p id="winning-number"></p>
+  </div>
+</div>
+  <script src='./js/guessing-game.js'></script>
+</body>
 </html>
